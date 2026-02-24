@@ -118,3 +118,131 @@ Regional multi-school dashboard
 Geographic workforce heatmaps
 
 Automated early-warning staffing alerts
+
+**Business Requirements Document (BRD)**
+Stage 1 Pilot – School Workforce Visibility Platform
+1. Executive Summary
+
+EduWorkforce Insight is a conceptual school-level workforce visibility platform designed to improve staffing decision-making through centralised data consolidation.
+
+The Stage 1 pilot focuses on reducing reliever hiring decision delays and minimising manual workforce reporting effort by introducing a unified reporting layer built on existing operational systems.
+
+This document outlines the business problem, objectives, scope, stakeholders, high-level requirements, and architectural direction.
+
+2. Background
+
+Research across public education reports, workforce data, and sector discussions revealed recurring operational patterns:
+
+Workforce data stored across disconnected systems
+
+Delayed visibility of staffing allocation
+
+Manual report consolidation processes
+
+Reactive reliever hiring decisions
+
+Rather than addressing systemic policy or funding issues, this project focuses on operational visibility improvement within existing infrastructure.
+
+3. Business Problem
+
+Workforce data across HR, payroll, timetable, and leave systems currently operates in silos without a central reporting layer.
+
+This fragmentation results in:
+
+Delayed reliever hiring decisions
+
+Limited visibility of vacancy duration
+
+Uneven workload allocation visibility
+
+Manual report consolidation requiring 6+ hours per month
+
+These limitations increase instructional disruption risk and operational inefficiency.
+
+4. Business Objectives
+Objective 1
+
+Reduce reliever hiring approval turnaround time from 7 days to 3 days to improve instructional continuity and minimise class disruption.
+
+Objective 2
+
+Reduce manual workforce reporting preparation time from 6 hours to 2 hours per month through centralised workforce visibility.
+
+5. Scope
+5.1 In Scope – Stage 1 Pilot
+
+Single-campus secondary school deployment
+
+Consolidated workforce reporting dashboard
+
+Vacancy duration tracking
+
+Workforce allocation visibility by department
+
+Reliever hiring workflow visibility
+
+Automated monthly reporting
+
+Daily data refresh from source systems
+
+5.2 Out of Scope
+
+Predictive attrition modelling
+
+Teacher wellbeing tracking
+
+Replacement of HR, payroll, or timetable systems
+
+Multi-campus or national deployment
+
+Real-time integration architecture
+
+6. Stakeholders
+Role	Responsibility
+Ministry of Education	Project Sponsor
+Principal	Primary User
+HR / Business Manager	Operational User
+Board of Trustees	Reporting Consumer
+7. Key Performance Indicators (KPIs)
+KPI	Baseline	Target
+Reliever Hiring Approval Turnaround	7 days	3 days
+Manual Workforce Reporting Time	6 hrs/month	2 hrs/month
+8. High-Level Business Requirements
+
+The system must provide consolidated visibility of workforce allocation across departments.
+
+The system must provide visibility of vacancy duration.
+
+The system must track reliever hiring approval timelines.
+
+The system must generate automated monthly workforce reports.
+
+The system must integrate workforce data from existing HR, payroll, and timetable systems.
+
+9. High-Level Architectural Direction
+
+The solution will function as a read-only visibility layer.
+
+Data will be:
+
+Extracted daily from existing operational systems
+
+Transformed into a standardised workforce schema
+
+Loaded into a central cloud-based data warehouse (NZ data residency)
+
+Presented through a leadership dashboard
+
+The system will not modify or replace operational systems.
+
+Detailed technical specifications will be documented in the System Requirements Specification (SRS).
+
+10. Future Roadmap (Not in Scope for Stage 1)
+
+Predictive attrition modelling
+
+Multi-school regional dashboard
+
+Geographic workforce heatmaps
+
+Automated staffing risk alerts
